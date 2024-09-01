@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+</head>
+
+<body class="text-slate-300 bg-[#1C232B]">
+    <header class="sm:px-11 sm:py-2 p-2">
+        <nav>
+            <div class="flex justify-between items-center sm:px-2 gap-3">
+                <a class="text-2xl font-semibold" href="/">MegaMart</a>
+                <div class="flex items-center gap-3">
+                    <div class="signinoutlink"></div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <div class="md:w-[680px] sm:w-[620px] w-full mx-auto pt-[40px] p-4 flex justify-start gap-2">
+        <svg width="30px" height="30px" viewBox="-0.5 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M10.8809 16.15C10.8809 16.0021 10.9101 15.8556 10.967 15.7191C11.024 15.5825 11.1073 15.4586 11.2124 15.3545C11.3175 15.2504 11.4422 15.1681 11.5792 15.1124C11.7163 15.0567 11.8629 15.0287 12.0109 15.03C12.2291 15.034 12.4413 15.1021 12.621 15.226C12.8006 15.3499 12.9399 15.5241 13.0211 15.7266C13.1024 15.9292 13.122 16.1512 13.0778 16.3649C13.0335 16.5786 12.9272 16.7745 12.7722 16.9282C12.6172 17.0818 12.4204 17.1863 12.2063 17.2287C11.9922 17.2711 11.7703 17.2494 11.5685 17.1663C11.3666 17.0833 11.1938 16.9426 11.0715 16.7618C10.9492 16.5811 10.8829 16.3683 10.8809 16.15ZM11.2408 13.42L11.1008 8.20001C11.0875 8.07453 11.1008 7.94766 11.1398 7.82764C11.1787 7.70761 11.2424 7.5971 11.3268 7.5033C11.4112 7.40949 11.5144 7.33449 11.6296 7.28314C11.7449 7.2318 11.8697 7.20526 11.9958 7.20526C12.122 7.20526 12.2468 7.2318 12.3621 7.28314C12.4773 7.33449 12.5805 7.40949 12.6649 7.5033C12.7493 7.5971 12.813 7.70761 12.8519 7.82764C12.8909 7.94766 12.9042 8.07453 12.8909 8.20001L12.7609 13.42C12.7609 13.6215 12.6809 13.8149 12.5383 13.9574C12.3958 14.0999 12.2024 14.18 12.0009 14.18C11.7993 14.18 11.606 14.0999 11.4635 13.9574C11.321 13.8149 11.2408 13.6215 11.2408 13.42Z"
+                class="fill-red-500" />
+            <path
+                d="M12 21.5C17.1086 21.5 21.25 17.3586 21.25 12.25C21.25 7.14137 17.1086 3 12 3C6.89137 3 2.75 7.14137 2.75 12.25C2.75 17.3586 6.89137 21.5 12 21.5Z"
+                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="stroke-red-500" />
+        </svg>
+        <div>
+            For testing purpose
+            <ul class="list-disc text-sm">
+                <li>Username:"user" and Password:"user".</li>
+                <li>Only login button will work.</li>
+            </ul>
+        </div>
+    </div>
+    <main class="sm:px-9 p-4 bg-transparent  flex justify-center items-center overflow-hidden">
+        <div
+            class="md:w-[680px] sm:w-[620px] w-full rounded-md flex sm:flex-row flex-col bg-gradient-to-r from-indigo-700 via-sky-800 to-emerald-700">
+            <div class="sm:w-[45%] sm:border-r-[2px]">
+                <div class="w-full flex sm:flex-col flex-col-reverse gap-6 justify-evenly items-center px-2 py-4">
+                    <div class="text-center sm:text-[25px] text-xl font-extrabold">
+                        <p>Hundreds of products.</p>
+                        <p>Get the best one.</p>
+                    </div>
+                    <img src="shopping-cart.png" alt="" class="sm:w-[90%] w-[100px]">
+                </div>
+            </div>
+            <div class="sm:w-[55%] sm:h-auto h-[390px] w-full overflow-hidden flex flex-col justify-center relative">
+                <div
+                    class="w-full px-3 py-4 flex flex-col justify-center gap-4 absolute -right-[589.6px] transition-all formdiv">
+                    <button class="absolute -top-2 right-1 p-1 rounded-full active:scale-95 transition-all"
+                        id="btnpage">
+                        <img src="icons8-arrow-50.png" alt="" class="w-[35px] rotate-180">
+                    </button>
+                    <form action="" method="dialog" class="authForm mt-3">
+                        <div class="gap-1 justify-start items-start hidden" id="autherror">
+                            <svg width="25px" height="25px" viewBox="-0.5 0 25 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.8809 16.15C10.8809 16.0021 10.9101 15.8556 10.967 15.7191C11.024 15.5825 11.1073 15.4586 11.2124 15.3545C11.3175 15.2504 11.4422 15.1681 11.5792 15.1124C11.7163 15.0567 11.8629 15.0287 12.0109 15.03C12.2291 15.034 12.4413 15.1021 12.621 15.226C12.8006 15.3499 12.9399 15.5241 13.0211 15.7266C13.1024 15.9292 13.122 16.1512 13.0778 16.3649C13.0335 16.5786 12.9272 16.7745 12.7722 16.9282C12.6172 17.0818 12.4204 17.1863 12.2063 17.2287C11.9922 17.2711 11.7703 17.2494 11.5685 17.1663C11.3666 17.0833 11.1938 16.9426 11.0715 16.7618C10.9492 16.5811 10.8829 16.3683 10.8809 16.15ZM11.2408 13.42L11.1008 8.20001C11.0875 8.07453 11.1008 7.94766 11.1398 7.82764C11.1787 7.70761 11.2424 7.5971 11.3268 7.5033C11.4112 7.40949 11.5144 7.33449 11.6296 7.28314C11.7449 7.2318 11.8697 7.20526 11.9958 7.20526C12.122 7.20526 12.2468 7.2318 12.3621 7.28314C12.4773 7.33449 12.5805 7.40949 12.6649 7.5033C12.7493 7.5971 12.813 7.70761 12.8519 7.82764C12.8909 7.94766 12.9042 8.07453 12.8909 8.20001L12.7609 13.42C12.7609 13.6215 12.6809 13.8149 12.5383 13.9574C12.3958 14.0999 12.2024 14.18 12.0009 14.18C11.7993 14.18 11.606 14.0999 11.4635 13.9574C11.321 13.8149 11.2408 13.6215 11.2408 13.42Z"
+                                    class="fill-red-500" />
+                                <path
+                                    d="M12 21.5C17.1086 21.5 21.25 17.3586 21.25 12.25C21.25 7.14137 17.1086 3 12 3C6.89137 3 2.75 7.14137 2.75 12.25C2.75 17.3586 6.89137 21.5 12 21.5Z"
+                                    stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+                                    class="stroke-red-500" />
+                            </svg>
+                            <p class="text-red-500 font-medium text-sm">Wrong username or password</p>
+                        </div>
+                        <div class="mb-2">
+                            <label for="username" class="font-medium">Username:</label>
+                            <input type="text" class="w-full p-2 border rounded-md text-black" name="username"
+                                placeholder="Enter username" required>
+                        </div>
+                        <!-- <div class="mb-2">
+                            <label for="email" class="font-medium">Email:</label>
+                            <input type="email" class="w-full p-2 border rounded-md text-black" name="email"
+                                placeholder="Enter email" required>
+                        </div> -->
+                        <div class="mb-2">
+                            <label for="password" class="font-medium">Password:</label>
+                            <input type="password" class="w-full p-2 border rounded-md text-black" name="password"
+                                placeholder="Enter password" required>
+                        </div>
+                        <button type="submit"
+                            class="w-full p-2 rounded-md bg-[#29ba66] text-slate-800 mt-2 font-bold">Log
+                            in</button>
+                    </form>
+                </div>
+                <div class="w-full px-3 py-4 flex flex-col justify-center gap-4 absolute right-0 transition-all btnDiv">
+                    <button
+                        class="w-full px-4 py-[13px] rounded-full bg-[#29ba66] text-slate-800 font-bold flex items-center active:scale-95 transition-all"
+                        id="signupBtn">
+                        <p class="flex items-center justify-center w-full text-sm">Sign up with email</p>
+                    </button>
+                    <button
+                        class="w-full px-3 py-[13px] rounded-full border-[2px] font-bold flex items-center active:scale-95 relative transition-all">
+                        <img src="icons8-google-48.png" alt="" class="w-[30px] absolute">
+                        <p class="flex items-center justify-center w-full px-[40px] text-sm">Continue with Google</p>
+                    </button>
+                    <button
+                        class="w-full px-3 py-[13px] rounded-full border-[2px] font-bold flex items-center active:scale-95 relative transition-all">
+                        <img src="icons8-facebook-48.png" alt="" class="w-[30px] absolute">
+                        <p class="flex items-center justify-center w-full px-[40px] text-sm">Continue with Facebook</p>
+                    </button>
+                    <button class="w-full px-4 py-[6px] font-bold underline active:scale-95 transition-all"
+                        id="signinBtn">Log
+                        in</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="sm:px-11 py-[50px] p-2 bg-[#1C232B]">
+        <div class="bg-[#191E24]">
+            <div class="flex flex-wrap gap-[20%] justify-start p-[40px]">
+                <div class="sm:m-0 mb-[30px]">
+                    <svg width="60px" height="60px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 4L7 20M17 4L14 20M5 8H20M4 16H19" stroke-width="2" stroke-linecap="round"
+                            class="stroke-current fill-none" />
+                    </svg>
+                    <h1 class="text-xl font-bold my-[5px]">MEGAMART</h1>
+                    <p class="text-sm font-semibold my-[15px]">CONTACT US</p>
+                    <div class="flex gap-2 mb-[4px]">
+                        <svg fill="#000000" width="23px" height="23px" viewBox="0 0 16 16"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M11.42 9.49c-.19-.09-1.1-.54-1.27-.61s-.29-.09-.42.1-.48.6-.59.73-.21.14-.4 0a5.13 5.13 0 0 1-1.49-.92 5.25 5.25 0 0 1-1-1.29c-.11-.18 0-.28.08-.38s.18-.21.28-.32a1.39 1.39 0 0 0 .18-.31.38.38 0 0 0 0-.33c0-.09-.42-1-.58-1.37s-.3-.32-.41-.32h-.4a.72.72 0 0 0-.5.23 2.1 2.1 0 0 0-.65 1.55A3.59 3.59 0 0 0 5 8.2 8.32 8.32 0 0 0 8.19 11c.44.19.78.3 1.05.39a2.53 2.53 0 0 0 1.17.07 1.93 1.93 0 0 0 1.26-.88 1.67 1.67 0 0 0 .11-.88c-.05-.07-.17-.12-.36-.21z"
+                                class="fill-current stroke-none" />
+                            <path
+                                d="M13.29 2.68A7.36 7.36 0 0 0 8 .5a7.44 7.44 0 0 0-6.41 11.15l-1 3.85 3.94-1a7.4 7.4 0 0 0 3.55.9H8a7.44 7.44 0 0 0 5.29-12.72zM8 14.12a6.12 6.12 0 0 1-3.15-.87l-.22-.13-2.34.61.62-2.28-.14-.23a6.18 6.18 0 0 1 9.6-7.65 6.12 6.12 0 0 1 1.81 4.37A6.19 6.19 0 0 1 8 14.12z"
+                                class="fill-current stroke-none" />
+                        </svg>
+                        <p class="text-sm">WhatsApp<br>+8801869005031</p>
+                    </div>
+
+                    <div class="flex gap-2">
+                        <svg width="23px" height="23px" viewBox="0 0 15 15" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="Page-1" stroke-width="1" fill-rule="evenodd">
+                                <g id="Dribbble-Light-Preview" transform="translate(-103.000000, -7321.000000)"
+                                    fill="#000000">
+                                    <g id="icons" transform="translate(56.000000, 160.000000)">
+                                        <path
+                                            d="M61.7302966,7173.99596 C61.2672966,7175.40296 59.4532966,7176.10496 58.1572966,7175.98796 C56.3872966,7175.82796 54.4612966,7174.88896 52.9992966,7173.85496 C50.8502966,7172.33496 48.8372966,7169.98396 47.6642966,7167.48896 C46.8352966,7165.72596 46.6492966,7163.55796 47.8822966,7161.95096 C48.3382966,7161.35696 48.8312966,7161.03996 49.5722966,7161.00296 C50.6002966,7160.95296 50.7442966,7161.54096 51.0972966,7162.45696 C51.3602966,7163.14196 51.7112966,7163.84096 51.9072966,7164.55096 C52.2742966,7165.87596 50.9912966,7165.93096 50.8292966,7167.01396 C50.7282966,7167.69696 51.5562966,7168.61296 51.9302966,7169.09996 C52.6632966,7170.05396 53.5442966,7170.87696 54.5382966,7171.50296 C55.1072966,7171.86196 56.0262966,7172.50896 56.6782966,7172.15196 C57.6822966,7171.60196 57.5872966,7169.90896 58.9912966,7170.48196 C59.7182966,7170.77796 60.4222966,7171.20496 61.1162966,7171.57896 C62.1892966,7172.15596 62.1392966,7172.75396 61.7302966,7173.99596 C61.4242966,7174.92396 62.0362966,7173.06796 61.7302966,7173.99596"
+                                            id="call-[#192]" class="fill-current stroke-none">
+                                        </path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                        <p class="text-sm">Call Now<br>+8801869005031</p>
+                    </div>
+                </div>
+                <div class="sm:m-0 mb-[30px]">
+                    <h1 class="text-sm font-semibold">MOST POPULAR CATEGORIES</h1>
+                    <ul class="my-[8px] list-disc">
+                        <li class="text-xs">Staples</li>
+                    </ul>
+                    <ul class="ml-5 flex flex-col gap-[10px] list-disc">
+                        <li class="text-xs">Beverages</li>
+                        <li class="text-xs">Personal Care</li>
+                        <li class="text-xs">Home Care</li>
+                        <li class="text-xs">Baby Care</li>
+                        <li class="text-xs">Vegetables & Fruits</li>
+                        <li class="text-xs">Snacks & Foods</li>
+                        <li class="text-xs">Dairy & Bakery</li>
+                    </ul>
+                </div>
+                <div class="sm:m-0 mb-[30px]">
+                    <h1 class="text-sm font-semibold">CUSTOMER SERVICES</h1>
+                    <ul class="my-[8px] list-disc">
+                        <li class="text-xs">About Us</li>
+                    </ul>
+                    <ul class="ml-5 flex flex-col gap-[10px] list-disc">
+                        <li class="text-xs">Terms & Conditions</li>
+                        <li class="text-xs">FAQ</li>
+                        <li class="text-xs">Privacy Policy</li>
+                        <li class="text-xs">E-waste Policy</li>
+                        <li class="text-xs">Cancellation & Return Policy</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex flex-wrap gap-6 justify-between px-[40px] py-[15px]">
+                <div class="flex items-center gap-2">
+                    <svg width="25px" height="25px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 4L7 20M17 4L14 20M5 8H20M4 16H19" stroke-width="2" stroke-linecap="round"
+                            class="stroke-current fill-none" />
+                    </svg>
+                    <p class="text-sm">MegaMart<br>
+                        Copyright 2024 - All right reserved by MegaMart</p>
+                </div>
+                <div class="flex gap-4">
+                    <svg width="25px" height="25px" viewBox="0 -2 20 20" version="1.1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g id="Page-1" stroke-width="1" fill-rule="evenodd">
+                            <g id="Dribbble-Light-Preview" transform="translate(-60.000000, -7521.000000)"
+                                fill="#000000">
+                                <g id="icons" transform="translate(56.000000, 160.000000)">
+                                    <path
+                                        d="M10.29,7377 C17.837,7377 21.965,7370.84365 21.965,7365.50546 C21.965,7365.33021 21.965,7365.15595 21.953,7364.98267 C22.756,7364.41163 23.449,7363.70276 24,7362.8915 C23.252,7363.21837 22.457,7363.433 21.644,7363.52751 C22.5,7363.02244 23.141,7362.2289 23.448,7361.2926 C22.642,7361.76321 21.761,7362.095 20.842,7362.27321 C19.288,7360.64674 16.689,7360.56798 15.036,7362.09796 C13.971,7363.08447 13.518,7364.55538 13.849,7365.95835 C10.55,7365.79492 7.476,7364.261 5.392,7361.73762 C4.303,7363.58363 4.86,7365.94457 6.663,7367.12996 C6.01,7367.11125 5.371,7366.93797 4.8,7366.62489 L4.8,7366.67608 C4.801,7368.5989 6.178,7370.2549 8.092,7370.63591 C7.488,7370.79836 6.854,7370.82199 6.24,7370.70483 C6.777,7372.35099 8.318,7373.47829 10.073,7373.51078 C8.62,7374.63513 6.825,7375.24554 4.977,7375.24358 C4.651,7375.24259 4.325,7375.22388 4,7375.18549 C5.877,7376.37088 8.06,7377 10.29,7376.99705"
+                                        id="twitter-[#154]" class="fill-current stroke-none">
+                                    </path>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                    <svg height="25px" width="25px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve">
+                        <path d="M460.8,68.452H51.2c-28.16,0-51.2,23.04-51.2,51.2v272.696c0,28.16,23.04,51.2,51.2,51.2h409.6
+        c28.16,0,51.2-23.04,51.2-51.2V119.652C512,91.492,488.96,68.452,460.8,68.452z M188.44,359.98V151.108l195.624,104.44
+        L188.44,359.98z" class="fill-current stroke-none" />
+                        <polygon points="188.44,359.98 384.056,255.548 188.44,151.108 " />
+                    </svg>
+                    <svg width="25px" height="25px" viewBox="-5 0 20 20" version="1.1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g id="Page-1" stroke-width="1" fill-rule="evenodd">
+                            <g id="Dribbble-Light-Preview" transform="translate(-385.000000, -7399.000000)"
+                                fill="#000000">
+                                <g id="icons" transform="translate(56.000000, 160.000000)">
+                                    <path
+                                        d="M335.821282,7259 L335.821282,7250 L338.553693,7250 L339,7246 L335.821282,7246 L335.821282,7244.052 C335.821282,7243.022 335.847593,7242 337.286884,7242 L338.744689,7242 L338.744689,7239.14 C338.744689,7239.097 337.492497,7239 336.225687,7239 C333.580004,7239 331.923407,7240.657 331.923407,7243.7 L331.923407,7246 L329,7246 L329,7250 L331.923407,7250 L331.923407,7259 L335.821282,7259 Z"
+                                        id="facebook-[#176]" class="fill-current stroke-none">
+                                    </path>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="signup.js"></script>
+</body>
+
+</html>

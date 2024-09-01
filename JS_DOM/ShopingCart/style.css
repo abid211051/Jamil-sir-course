@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+
+    /* Hide scrollbar for Chrome, Safari, and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+        will-change: auto;
+    }
+
+    /* Hide scrollbar for IE, Edge, and Firefox */
+    .no-scrollbar {
+        will-change: auto;
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+
+    .clip {
+        clip-path: polygon(0 0, 75% 0, 95% 100%, 0 100%);
+    }
+}

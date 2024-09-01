@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shopping Cart</title>
+</head>
+
+<body class="text-slate-100">
+  <header class="sm:px-11 sm:py-2 p-2 bg-[#1C232B]">
+    <nav>
+      <div class="flex justify-between items-center sm:px-2 gap-3 mb-12">
+        <a class="text-2xl font-semibold" href="/">MegaMart</a>
+        <div class="flex items-center gap-3">
+          <a class="flex flex-wrap items-center gap-[2px]" href="cart.html">
+            <svg width="20px" height="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M6.29977 5H21L19 12H7.37671M20 16H8L6 3H3M9 20C9 20.5523 8.55228 21 8 21C7.44772 21 7 20.5523 7 20C7 19.4477 7.44772 19 8 19C8.55228 19 9 19.4477 9 20ZM20 20C20 20.5523 19.5523 21 19 21C18.4477 21 18 20.5523 18 20C18 19.4477 18.4477 19 19 19C19.5523 19 20 19.4477 20 20Z"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="stroke-current fill-none" />
+            </svg>
+            <p class="text-sm font-medium">Cart</p>
+            <p class="text-sm bg-orange-400 px-1 rounded-lg text-slate-800 font-medium cartamnt">0</p>
+          </a>
+          <div class="signinoutlink">
+
+          </div>
+        </div>
+      </div>
+      <div class="border-b-[3px] border-[#394554] mb-3 flex justify-between items-center">
+        <span class="bg-[#394554] pl-2 py-1 pr-14 clip text-[15px]">Categories</span>
+        <div class="flex gap-1">
+          <img src="arrows.png" alt="" class="h-[30px] rotate-180">
+          <img src="arrows.png" alt="" class="h-[30px]">
+        </div>
+      </div>
+      <div class="flex gap-6 mb-6 bg-[#374150] p-1.5 rounded-b-md">
+        <div class="text-center text-nowrap">
+          <button class="active:scale-90 px-2 py-1.5 rounded-sm bg-[#1C232B] allProd">All products</button>
+        </div>
+        <div class="flex overflow-x-scroll justify-evenly text-center text-nowrap gap-6 no-scrollbar categoryDiv">
+          <!-- <button class="px-2 py-1.5 rounded-sm bg-[#252e39]">Beauty</button> -->
+        </div>
+      </div>
+    </nav>
+    <section id="hero"
+      class="bg-[#151531] flex flex-wrap lg:justify-center justify-center items-center sm:px-[30px] sm:py-[30px] p-10 rounded-md">
+      <div class="flex flex-col justify-center md:w-[50%]">
+        <p class="sm:text-xl text-lg mb-2">Best Deal Online on classic watches</p>
+        <p class="sm:text-5xl text-4xl mb-2">CLASSIC WEARABLE.</p>
+        <p class="sm:text-xl text-lg">Up to 80% OFF</p>
+      </div>
+      <div class="md:w-[300px] flex items-center justify-center md:mt-0 mt-7 overflow-hidden">
+        <img src="Watche16.png" alt="" class="w-[260px] hover:scale-110 transition-all">
+      </div>
+    </section>
+  </header>
+  <main class="sm:px-11 py-[60px] p-2 bg-[#1C232B]">
+    <div class="border-b-[3px] border-[#374150] mb-3">
+      <span class="bg-[#374150] pl-2 py-1 pr-14 clip text-[17px]">Collections</span>
+    </div>
+    <p class="text-xl hidden text-center" id="prodWarning">Products not found</p>
+    <div class="flex flex-wrap justify-evenly gap-4 mb-2 py-4 sm:px-4 px-1 bg-[#374150] rounded-b-md cartDiv">
+
+    </div>
+    <!-- <div class="w-[200px] h-[340px] bg-[#28303b] p-2 relative flex flex-col justify-between rounded-md" id="item-9999">
+      <p
+        class="w-[50px] text-xs text-center absolute top-0 right-0 rounded-se-md rounded-es-md bg-indigo-400 font-medium py-1 text-slate-200">
+        99.99%<br>OFF</p>
+
+      <img src="inputImg.png" alt="" class="h-[145px]">
+      <p class="font-medium overflow-hidden text-ellipsis whitespace-nowrap">Product-6 halka-patla
+        valo kicu
+      </p>
+      <p class="overflow-hidden h-[40px] text-sm">Lorem ipsum dolor sit amet
+        consectetur
+        adipisicing elit. Rerum sunt quibusdam vero repudiandae earum magnam
+        recusandae iste dolore,
+        <span>...</span>
+      </p>
+      <div class="flex justify-between">
+        <del>$300.99</del>
+        <p>$200.09</p>
+      </div>
+      <p class="absolute bottom-[42px] text-xs text-rose-600">* Please Login first</p>
+      <button class="bg-indigo-500  font-semibold text-slate-50 p-1 w-full rounded-md active:scale-95 addToCart">ADD
+        TO CART
+      </button>
+    </div> -->
+    <div class="mt-7">
+      <div class="pagebtndiv flex flex-wrap gap-1.5 bg-[#374150] p-1.5 rounded-md">
+        <!-- <button class="bg-emerald-700 py-1.5 px-3 border h-min">1</button>
+        <button class="py-1.5 px-3 border h-min">2</button>
+        <button class="py-1.5 px-3 border h-min">3</button>
+        <button class="py-1.5 px-3 border h-min">4</button>
+        <button class="py-1.5 px-3 border h-min">5</button>
+        <button class="py-1.5 px-3 border h-min">6</button>
+        <p class="py-1.5 px-3 border h-min font-bold">. . .</p>
+        <button class="py-1.5 px-3 border h-min">14</button> -->
+      </div>
+    </div>
+  </main>
+  <footer class="sm:px-11 py-[50px] p-2 bg-[#1C232B]">
+    <div class="bg-[#191E24]">
+      <div class="flex flex-wrap gap-[20%] justify-start p-[40px]">
+        <div class="sm:m-0 mb-[30px]">
+          <svg width="60px" height="60px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 4L7 20M17 4L14 20M5 8H20M4 16H19" stroke-width="2" stroke-linecap="round"
+              class="stroke-current fill-none" />
+          </svg>
+          <h1 class="text-xl font-bold my-[5px]">MEGAMART</h1>
+          <p class="text-sm font-semibold my-[15px]">CONTACT US</p>
+          <div class="flex gap-2 mb-[4px]">
+            <svg fill="#000000" width="23px" height="23px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M11.42 9.49c-.19-.09-1.1-.54-1.27-.61s-.29-.09-.42.1-.48.6-.59.73-.21.14-.4 0a5.13 5.13 0 0 1-1.49-.92 5.25 5.25 0 0 1-1-1.29c-.11-.18 0-.28.08-.38s.18-.21.28-.32a1.39 1.39 0 0 0 .18-.31.38.38 0 0 0 0-.33c0-.09-.42-1-.58-1.37s-.3-.32-.41-.32h-.4a.72.72 0 0 0-.5.23 2.1 2.1 0 0 0-.65 1.55A3.59 3.59 0 0 0 5 8.2 8.32 8.32 0 0 0 8.19 11c.44.19.78.3 1.05.39a2.53 2.53 0 0 0 1.17.07 1.93 1.93 0 0 0 1.26-.88 1.67 1.67 0 0 0 .11-.88c-.05-.07-.17-.12-.36-.21z"
+                class="fill-current stroke-none" />
+              <path
+                d="M13.29 2.68A7.36 7.36 0 0 0 8 .5a7.44 7.44 0 0 0-6.41 11.15l-1 3.85 3.94-1a7.4 7.4 0 0 0 3.55.9H8a7.44 7.44 0 0 0 5.29-12.72zM8 14.12a6.12 6.12 0 0 1-3.15-.87l-.22-.13-2.34.61.62-2.28-.14-.23a6.18 6.18 0 0 1 9.6-7.65 6.12 6.12 0 0 1 1.81 4.37A6.19 6.19 0 0 1 8 14.12z"
+                class="fill-current stroke-none" />
+            </svg>
+            <p class="text-sm">WhatsApp<br>+8801869005031</p>
+          </div>
+
+          <div class="flex gap-2">
+            <svg width="23px" height="23px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink">
+              <g id="Page-1" stroke-width="1" fill-rule="evenodd">
+                <g id="Dribbble-Light-Preview" transform="translate(-103.000000, -7321.000000)" fill="#000000">
+                  <g id="icons" transform="translate(56.000000, 160.000000)">
+                    <path
+                      d="M61.7302966,7173.99596 C61.2672966,7175.40296 59.4532966,7176.10496 58.1572966,7175.98796 C56.3872966,7175.82796 54.4612966,7174.88896 52.9992966,7173.85496 C50.8502966,7172.33496 48.8372966,7169.98396 47.6642966,7167.48896 C46.8352966,7165.72596 46.6492966,7163.55796 47.8822966,7161.95096 C48.3382966,7161.35696 48.8312966,7161.03996 49.5722966,7161.00296 C50.6002966,7160.95296 50.7442966,7161.54096 51.0972966,7162.45696 C51.3602966,7163.14196 51.7112966,7163.84096 51.9072966,7164.55096 C52.2742966,7165.87596 50.9912966,7165.93096 50.8292966,7167.01396 C50.7282966,7167.69696 51.5562966,7168.61296 51.9302966,7169.09996 C52.6632966,7170.05396 53.5442966,7170.87696 54.5382966,7171.50296 C55.1072966,7171.86196 56.0262966,7172.50896 56.6782966,7172.15196 C57.6822966,7171.60196 57.5872966,7169.90896 58.9912966,7170.48196 C59.7182966,7170.77796 60.4222966,7171.20496 61.1162966,7171.57896 C62.1892966,7172.15596 62.1392966,7172.75396 61.7302966,7173.99596 C61.4242966,7174.92396 62.0362966,7173.06796 61.7302966,7173.99596"
+                      id="call-[#192]" class="fill-current stroke-none">
+                    </path>
+                  </g>
+                </g>
+              </g>
+            </svg>
+            <p class="text-sm">Call Now<br>+8801869005031</p>
+          </div>
+        </div>
+        <div class="sm:m-0 mb-[30px]">
+          <h1 class="text-sm font-semibold">MOST POPULAR CATEGORIES</h1>
+          <ul class="my-[8px] list-disc">
+            <li class="text-xs">Staples</li>
+          </ul>
+          <ul class="ml-5 flex flex-col gap-[10px] list-disc">
+            <li class="text-xs">Beverages</li>
+            <li class="text-xs">Personal Care</li>
+            <li class="text-xs">Home Care</li>
+            <li class="text-xs">Baby Care</li>
+            <li class="text-xs">Vegetables & Fruits</li>
+            <li class="text-xs">Snacks & Foods</li>
+            <li class="text-xs">Dairy & Bakery</li>
+          </ul>
+        </div>
+        <div class="sm:m-0 mb-[30px]">
+          <h1 class="text-sm font-semibold">CUSTOMER SERVICES</h1>
+          <ul class="my-[8px] list-disc">
+            <li class="text-xs">About Us</li>
+          </ul>
+          <ul class="ml-5 flex flex-col gap-[10px] list-disc">
+            <li class="text-xs">Terms & Conditions</li>
+            <li class="text-xs">FAQ</li>
+            <li class="text-xs">Privacy Policy</li>
+            <li class="text-xs">E-waste Policy</li>
+            <li class="text-xs">Cancellation & Return Policy</li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex flex-wrap gap-6 justify-between px-[40px] py-[15px]">
+        <div class="flex items-center gap-2">
+          <svg width="25px" height="25px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 4L7 20M17 4L14 20M5 8H20M4 16H19" stroke-width="2" stroke-linecap="round"
+              class="stroke-current fill-none" />
+          </svg>
+          <p class="text-sm">MegaMart<br>
+            Copyright 2024 - All right reserved by MegaMart</p>
+        </div>
+        <div class="flex gap-4">
+          <svg width="25px" height="25px" viewBox="0 -2 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="Page-1" stroke-width="1" fill-rule="evenodd">
+              <g id="Dribbble-Light-Preview" transform="translate(-60.000000, -7521.000000)" fill="#000000">
+                <g id="icons" transform="translate(56.000000, 160.000000)">
+                  <path
+                    d="M10.29,7377 C17.837,7377 21.965,7370.84365 21.965,7365.50546 C21.965,7365.33021 21.965,7365.15595 21.953,7364.98267 C22.756,7364.41163 23.449,7363.70276 24,7362.8915 C23.252,7363.21837 22.457,7363.433 21.644,7363.52751 C22.5,7363.02244 23.141,7362.2289 23.448,7361.2926 C22.642,7361.76321 21.761,7362.095 20.842,7362.27321 C19.288,7360.64674 16.689,7360.56798 15.036,7362.09796 C13.971,7363.08447 13.518,7364.55538 13.849,7365.95835 C10.55,7365.79492 7.476,7364.261 5.392,7361.73762 C4.303,7363.58363 4.86,7365.94457 6.663,7367.12996 C6.01,7367.11125 5.371,7366.93797 4.8,7366.62489 L4.8,7366.67608 C4.801,7368.5989 6.178,7370.2549 8.092,7370.63591 C7.488,7370.79836 6.854,7370.82199 6.24,7370.70483 C6.777,7372.35099 8.318,7373.47829 10.073,7373.51078 C8.62,7374.63513 6.825,7375.24554 4.977,7375.24358 C4.651,7375.24259 4.325,7375.22388 4,7375.18549 C5.877,7376.37088 8.06,7377 10.29,7376.99705"
+                    id="twitter-[#154]" class="fill-current stroke-none">
+                  </path>
+                </g>
+              </g>
+            </g>
+          </svg>
+          <svg height="25px" width="25px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve">
+            <path d="M460.8,68.452H51.2c-28.16,0-51.2,23.04-51.2,51.2v272.696c0,28.16,23.04,51.2,51.2,51.2h409.6
+    c28.16,0,51.2-23.04,51.2-51.2V119.652C512,91.492,488.96,68.452,460.8,68.452z M188.44,359.98V151.108l195.624,104.44
+    L188.44,359.98z" class="fill-current stroke-none" />
+            <polygon points="188.44,359.98 384.056,255.548 188.44,151.108 " />
+          </svg>
+          <svg width="25px" height="25px" viewBox="-5 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="Page-1" stroke-width="1" fill-rule="evenodd">
+              <g id="Dribbble-Light-Preview" transform="translate(-385.000000, -7399.000000)" fill="#000000">
+                <g id="icons" transform="translate(56.000000, 160.000000)">
+                  <path
+                    d="M335.821282,7259 L335.821282,7250 L338.553693,7250 L339,7246 L335.821282,7246 L335.821282,7244.052 C335.821282,7243.022 335.847593,7242 337.286884,7242 L338.744689,7242 L338.744689,7239.14 C338.744689,7239.097 337.492497,7239 336.225687,7239 C333.580004,7239 331.923407,7240.657 331.923407,7243.7 L331.923407,7246 L329,7246 L329,7250 L331.923407,7250 L331.923407,7259 L335.821282,7259 Z"
+                    id="facebook-[#176]" class="fill-current stroke-none">
+                  </path>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="./main.js"></script>
+</body>
+
+</html>
