@@ -1,0 +1,19 @@
+{
+  "name": "learnyounode",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "learnyounode": "^4.2.2",
+    "npm": "^10.8.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.4"
+  }
+}
